@@ -1,4 +1,4 @@
-/*font-family: 'Raleway', sans-serif;*/
+/*font-family: 'Raleway', sans-serif;*/ 
 
 :root {
 	--color: #24BAA0;
@@ -322,7 +322,6 @@ body {
 }
 .banner-slides {
 	height: 100%;
-	background: yellow;
 	margin: 0 100px;
 	position: relative;
 }
@@ -340,4 +339,181 @@ body {
 .banner-slide-active {
 	opacity: 1;
 	z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------*/
+/*---------------main offer--------------------*/
+/*---------------------------------------------*/
+
+	
+.main-offer {
+	padding: 40px 0;
+	background: #F1F1F1;
+}
+
+.main-offer .col-1-3 {
+	width: 33.3333333333333333%;
+	padding: 0 5px;
+}
+
+.offer-row {
+	padding: 0 15px;
+	display: flex;
+}
+
+
+/*---- Each box styling ----*/
+
+.offer-box {
+	width: 100%;
+	height: 500px;
+	background: #F9F9F9;
+    border: 2px solid #D4D4D4;
+	text-align: center;
+	margin-bottom: 20px;
+	padding: 20px 0;
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.offer-box:before {
+	content: '';
+	width: 50px;	
+	height: 50px;
+	background: #fff;
+	border: 2px solid #D4D4D4;
+	border-radius: 50%;
+	position: absolute;
+	top: -35px;
+	left: calc(50% - 25px);
+}
+
+.offer-box:after {
+	content: '';
+	width: 24px;	
+	height: 24px;
+	background: #BEBEBE;
+	border-radius: 50%;
+	position: absolute;
+	top: -20px;
+	left: calc(50% - 10px);
+}
+
+.offer-box-title {
+	font-size: 24px;
+	text-transform: uppercase;
+	color: var(--color);
+	margin: 5px 0 25px;
+}
+
+.offer-box-price {
+	width: 125px;	
+	height: 125px;
+	background: #fff;
+	color: #BEBEBE;
+	font-weight: 600;
+	border: 2px solid #D4D4D4;
+	border-radius: 50%;
+	margin: 0 auto 30px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.offer-box-price strong {
+	display: flex;
+}
+
+.offer-box-price .large-n {
+	font-size: 45px;
+}
+.offer-box-price .small-n {
+	font-size: 16px;
+	font-weight: 400;
+}
+.offer-box-price .currency-text {
+	font-size: 16px;
+	padding: 5px 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.offer-box-list {
+	font-size: 24px;
+	margin: 10px 0;
+}
+
+.offer-box-list li {
+	background: #F1F1F1;
+	color: #888888;
+	padding: 10px 0;
+}
+.offer-box-list li:nth-of-type(odd) {
+	background: #E4E4E4;
+	color: #A9A9A9;
+}
+
+.offer-box-btn {
+	margin-bottom: 10px;
+	margin-top: auto;
+}
+
+.offer-box-btn .btn {
+	width: 40%;
+	font-size: 16px;
+	text-decoration: none;
+	padding: 10px;
+	display: inline-block;
+}
+
+/* ---- Second offer-box styling ---- */
+
+.offer-box--special {
+	background: var(--color);
+	border-color: var(--color);
+}
+
+.offer-box--special:before {
+	background: var(--color);
+	border-color: var(--color);
+}
+
+.offer-box--special:after  {
+	background: #fff;
+}
+
+.offer-box--special .offer-box-title {
+	color: #fff;
+}
+
+.offer-box--special .offer-box-price {
+	color: var(--color);
+	border-color: var(--color);
+}
+
+.offer-box--special .offer-box-list li {
+	color: #A9A9A9;
+}
+
+.offer-box--special .offer-box-list li:nth-of-type(odd) {
+	background: #fff;
+}
+
+.offer-box--special .offer-box-btn .btn {
+	color: var(--color);
+	background: #fff;
 }
